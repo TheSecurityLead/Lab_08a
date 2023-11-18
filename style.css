@@ -1,1 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
 
+header, nav, #logo, ul, li, #hero, #sub-banners, .banner, #featured, #featured-content, #featured-image, footer {
+    /* This will outline each section for visual reference */
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    display: block; /* To remove bottom space under the image */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    padding: 0 20px;
+}
+
+#hero img, .banner img, #featured-image img {
+    width: 100%;
+    height: auto;
+}
+
+#sub-banners {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.banner:last-child {
+    margin-right: 0;
+}
+
+#featured {
+    display: flex;
+    justify-content: space-between;
+}
+
+#featured-content {
+    flex: 3;
+}
+
+#featured-image {
+    flex: 2;
+}
+
+footer {
+    text-align: center;
+}
